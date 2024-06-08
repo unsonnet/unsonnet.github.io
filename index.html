@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="/assets/fonts/icons.css"></head>
+  <script src="index.js"></script> 
+  <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
+  <title>Santiago Rodriguez</title>
+</head>
+<body>
+  <script>0</script>
+  <input id="theme" type="checkbox" title="Color Theme Selector"></input>
+  <label for="theme" class="ico-"></label>
+  <!-- OVERLAY -->
+  <div id="overlay">
+    <input id="overlay-ham" type="checkbox" title="Open Navigation"></input>
+    <label for="overlay-ham">
+      <span></span>
+    </label>
+    <div id="overlay-nav">
+      <a href="#home" onclick="closeOverlay()">home</a>
+      <a href="#cv" onclick="closeOverlay()">cv</a>
+      <a href="#research" onclick="closeOverlay()">research</a>
+      <a href="#music" onclick="closeOverlay()">music</a>
+      <!-- <a href="" onclick="closeOverlay()">etc.</a> -->
+    </div>
+  </div>
+  <!-- MAIN CONTENT -->
+  <div id="main">
+    <!-- HEADER -->
+    <div id="header">
+      <a id="header-title" href="#home">Santiago Ro.</a>
+      <div id="header-nav">
+        <a href="#home">home</a>
+        <a href="#cv">cv</a>
+        <a href="#research">research</a>
+        <a href="#music">music</a>
+        <!-- <a>etc.</a> -->
+      </div>
+    </div>
+    <!-- CONTENT -->
+    <div id="body">
+      <!-- INTRODUCTION (home) -->
+      <div id="home">
+        <!-- short intro -->
+        <div id="home-intro">
+          <h4>Hello &#128075; my name is</h4>
+          <h1>Santiago Rodriguez</h1>
+          <p>I'm a researcher + musician focusing on the intersection of <strong>programming language theory</strong>, <strong>algebraic geometry</strong>, and <strong>computational complexity theory</strong>. Broadly, my work centers around understanding the strengths and limitations of computation from the perspective of <span class="tooltip"><u>abstract nonsense</u><span>A nonderogatory term for category theoretic ideas <a href="https://en.wikipedia.org/wiki/Abstract_nonsense" target="_blank" rel="noopener noreferrer">[wiki]</a></span></span>. I'm always open to chat and collaborate, so feel free to reach out!</p>
+        </div>
+        <!-- profile -->
+        <div id="home-pf">
+          <img src="/assets/images/pf-square.jpg" alt="Santiago Rodriguez in front of the Pyramid of the Moon at Teotihuacan, Mexico"/>
+        </div>
+      </div>
+      <span class="body-scroll"><a href="#cv"><i class="ico-scroll" title="Section 1: CV"></i></a></span>
+      <!-- CURRICULUM VITAE (cv) -->
+      <div id="cv">
+        <!-- short bio -->
+        <div id="cv-bio">
+          <img src="/assets/images/pf-square.jpg" alt="Santiago Rodriguez in front of the Pyramid of the Moon at Teotihuacan, Mexico"/>
+          <dl id="cv-bio-stats">
+            <dt>name + age</dt>
+            <dd>Santiago Rodriguez, 22</dd>
+            <dt>languages</dt>
+            <dd>English and Spanish</dd>
+            <dt>contact</dt>
+            <dd>
+              <ul id="cv-bio-stats-contacts" class="icons">
+                <li class="ico-email">
+                  <a href="mailto:srodvasquez@gmail.com">srodvasquez@gmail.com</a>
+                </li>
+                <li class="ico-phone">
+                  <a href="tel:+19548821869">+1 954-882-1869</a>
+                </li>
+                <li class="ico-github">
+                  <a href="https://github.com/unsonnet">unsonnet</a>
+                </li>
+                <li class="ico-linkedin">
+                  <a href="https://www.linkedin.com/in/santiago-ro">santiago-ro</a>
+                </li>
+              </ul>
+            </dd>
+            <dt>
+              <a href="/assets/pub/cv.pdf">view full cv <i class="ico-download"></i></a>
+            </dt>
+          </dl>
+        </div>
+        <!-- short past -->
+        <dl id="cv-past">
+          <!-- short past (education) -->
+          <dt>education</dt>
+          <dd>
+            <dl id="cv-past-edu" class="time">
+              <dt>
+                <h4>B.S. in Mathematics and Computer Science</h4>
+                <p><span>Sep 2020</span>&ndash;<span>Aug 2024</span></p>
+              </dt>
+              <dd>
+                <em>University of Central Florida</em>
+              </dd>
+            </dl>
+          </dd>
+          <!-- short past (experience) -->
+          <dt>experiences</dt>
+          <dd>
+            <dl id="cv-past-exp" class="time">
+              <dt>
+                <h4>Visiting Researcher</h4>
+                <p><span>May 2023</span>&ndash;<span>Present</span></p>
+              </dt>
+              <dd>
+                <em>University of Pennsylvania</em>
+                <p>Currently investigating formal verification of compiler optimization algorithms targeting LLVM IR in collaboration with the Vellvm team. Previously investigated differential programming semantics for verifying continuous optimization algorithms.</p>
+              </dd>
+              <dt>
+                <h4>Senior Design Team Member</h4>
+                <p><span>Sep 2023</span>&ndash;<span>Apr 2024</span></p>
+              </dt>
+              <dd>
+                <em>Georgia Tech Research Institute</em>
+                <p>Investigated machine learning methods for detecting cyberattacks in communication networks in collaboration with a team of undergraduate peers and the U.S. Department of Defense's National Security Innovation Network.</p>
+              </dd>
+              <dt>
+                <h4>Undergraduate Researcher</h4>
+                <p><span>May 2022</span>&ndash;<span>Present</span></p>
+              </dt>
+              <dd>
+                <em>University of Central Florida</em>
+                <p>Currently investigating rogue wave occurrences in the deep sea modeled as finite-gap solutions for the focusing Nonlinear Schr&#246;dinger Equation. Previously investigated static analysis methods for approximating worst-case time complexity.</p>
+              </dd>
+              <dt>
+                <h4>Mathematics and Computer Science Tutor</h4>
+                <p><span>Sep 2020</span>&ndash;<span>Present</span></p>
+              </dt>
+              <dd>
+                <em>Independent</em>
+                <p>Designed and taught lessons on Python programming, advanced algorithms, and logic to classes with up to 20 students. Also developed a text-based dungeon crawler in Python to teach students about project development.</p>
+              </dd>
+            </dl>
+          </dd>
+          <!-- short past (skills) -->
+          <dt>skills</dt>
+          <dd>
+            <dl id="cv-past-skills">
+              <dt>Programming Languages</dt>
+              <dd>
+                <ul class="tags">
+                  <li>C/C++</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>HTML/CSS</li>
+                  <li>JS/React</li>
+                  <li>Mathematica</li>
+                  <li>MATLAB</li>
+                  <li>Haskell</li>
+                  <li>Coq</li>
+                  <li>NASM</li>
+                </ul>
+              </dd>
+              <dt>Software</dt>
+              <dd>
+                <ul class="tags">
+                  <li>Linux</li>
+                  <li>LaTeX</li>
+                  <li>Microsoft Office</li>
+                  <li>Git</li>
+                  <li>Docker</li>
+                  <li>Anaconda</li>
+                </ul>
+              </dd>
+            </dl>
+          </dd>
+          <!-- short past (honors and awards) -->
+          <dt>honors + awards</dt>
+          <dd>
+            <ul id="cv-past-honors">
+              <li>Ronald E. McNair Scholar</li>
+              <li>NSF REU Fellow</li>
+              <li>Pi Mu Epsilon Honor Society</li>
+              <li>Tau Beta Pi Honor Society</li>
+              <li>Florida's Bright Futures Academic Scholarship</li>
+              <li>National Hispanic Scholarship</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <span class="body-scroll"><a href="#research"><i class="ico-scroll" title="Section 2: Research"></i></a></span>
+      <!-- PROJECTS (research) -->
+      <div id="research">
+        <!-- short research interests -->
+        <h2>research interests</h2>
+        <ul id="research-interests" class="icons par">
+          <li class="ico-pl">Programming Languages</li>
+          <li class="ico-ml">Machine Learning</li>
+          <li class="ico-algebra">Abstract Algebra</li>
+          <li class="ico-analysis">Analysis</li>
+        </ul>
+        <!-- short project descriptions -->
+        <h2>projects</h2>
+        <dl id="research-projects" class="pic">
+          <dt>
+            <a href="https://www.cis.upenn.edu/~stevez/vellvm/">
+              <img src="/assets/images/sum24.png"/>
+              <h4>Mechanized Dataflow Analysis for LLVM IR</h4>
+            </a>
+            <ul class="icons bracket">
+              <li class="ico-pl"></li>
+              <li class="ico-analysis"></li>
+            </ul>
+          </dt>
+          <dd>
+            <em>with <a href="https://www.cis.upenn.edu/~stevez/">Steve Zdancewic</a></em>
+            <p>Enhancing Vellvm's mechanized analysis framework to support instruction-level dataflow analyses that are sound with respect to semantic specifications.</p>
+          </dd>
+          <dt>
+            <a href="/assets/pub/sum23.pdf">
+              <img src="/assets/images/sum23-dark.png" class="dark"/>
+              <img src="/assets/images/sum23-light.png" class="light"/>
+              <h4>Representation-Theoretic Differential Programming Semantics</h4>
+            </a>
+            <ul class="icons bracket">
+              <li class="ico-pl"></li>
+              <li class="ico-ml"></li>
+              <li class="ico-algebra"></li>
+            </ul>
+          </dt>
+          <dd>
+            <em>with <a href="https://www.cis.upenn.edu/~stevez/">Steve Zdancewic</a>, <a href="https://stephenmell.github.io/">Stephen Mell</a></em>
+            <p>Introducing a differential calculus within the simply-typed lambda calculus as a foundation for verifying continuous optimization algorithms in machine learning.</p>
+          </dd>
+          <dt>
+            <a href="/assets/pub/sum22.pdf">
+              <img src="/assets/images/sum22-dark.png" class="dark"/>
+              <img src="/assets/images/sum22-light.png" class="light"/>
+              <h4>Asymptotic Distribution of Rogue Wave Amplitudes</h4>
+            </a>
+            <ul class="icons bracket">
+              <li class="ico-analysis"></li>
+            </ul>
+          </dt>
+          <dd>
+            <em>with <a href="https://scholar.google.com/citations?user=zz637JUAAAAJ&hl=en">Alexander Tovbis</a></em>
+            <p>Deducing tight asymptotic bounds on wave amplitude distributions in the deep sea, modeled as finite-gap solutions of the focusing Nonlinear Schr&#246;dinger Equation.</p>
+          </dd>
+          <dt>
+            <a href="https://github.com/unsonnet/auto-time">
+              <img src="/assets/images/spr24-dark.png" class="dark"/>
+              <img src="/assets/images/spr24-light.png" class="light"/>
+              <h4>Approximating Worst-Case Time Complexity</h4>
+            </a>
+            <ul class="icons bracket">
+              <li class="ico-pl"></li>
+              <li class="ico-algebra"></li>
+            </ul>
+          </dt>
+          <dd>
+            <em>with <a href="http://cs.ucf.edu/~leavens/homepage.html">Gary T. Leavens</a></em>
+            <p>Automating time complexity analysis for an imperative programming language using a compositional dataflow analysis technique that computes upper bounds on variable assignments.</p>
+          </dd>
+          <dt>
+            <a href="/assets/pub/fal23.pdf">
+              <img src="/assets/images/fal23-dark.png" class="dark"/>
+              <img src="/assets/images/fal23-light.png" class="light"/>
+              <h4>Network Anomaly Detection With Graph Neural Networks</h4>
+            </a>
+            <ul class="icons bracket">
+              <li class="ico-ml"></li>
+            </ul>
+          </dt>
+          <dd>
+            <em>with <a href="https://stonebranden.com/">Branden Stone</a>, Emily Hannon, Gustavo Nazario Perez, Landon Russell, Mukundh Vasudevan, Nicholas Lonnon</em>
+            <p>Detecting man-in-the-middle and DDoS attacks in communication networks using a homogeneous graph autoencoder model trained on the UNSW-NB15 dataset.</p>
+          </dd>
+        </dl>
+      </div>
+      <span class="body-scroll"><a href="#music"><i class="ico-scroll" title="Section 3: Music"></i></a></span>
+      <!-- PROJECTS (music) -->
+      <div id="music" style="display: flex;">
+        <span style="margin: auto; text-align: center;">Music Portfolio<br/>&lt;!-- under construction --&gt;</span>
+      </div>
+      <!-- FOOTER -->
+      <span id="footer">Santiago Rodriguez &copy; 2024. All rights reserved.</span>
+    </div>
+  </div>
+</body>
