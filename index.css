@@ -14,13 +14,13 @@
 
 html {height: 100%;}
 body {
-  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
   font-family: var(--sans-serif);
   font-size: 14pt;
   font-weight: normal;
   height: 100%;
   margin: 0;
-  padding: 20px;
 }
 
 a, button {
@@ -290,8 +290,8 @@ ul.tags {
   display: none;
 
   /* position in header */
-  & ~ #main > #header > #header-nav {
-    left: -50px;
+  & ~ #header > #header-nav {
+    left: -40px;
     position: relative;
   }
 
@@ -299,12 +299,12 @@ ul.tags {
     height: 20px;
     padding: 10px;
     position: absolute;
-    top: 30px;
+    top: 10px;
     width: 20px;
     z-index: 3;
 
-    @media screen and (min-width: 900px) {right: 30px;}
-    @media screen and (max-width: 900px) {left: 30px;}
+    @media screen and (min-width: 900px) {right: 10px;}
+    @media screen and (max-width: 900px) {left: 10px; top: 9px;}
   }
   
   /* sun + moon icon */
@@ -387,8 +387,8 @@ ul.tags {
     height: 20px;
     padding: 10px;
     position: absolute;
-    right: 30px;
-    top: 30px;
+    right: 10px;
+    top: 10px;
     width: 20px;
     z-index: 3;
   }
@@ -484,23 +484,13 @@ ul.tags {
   transition: clip-path 1s 0s ease;
 }
 
-/* MAIN CONTENT ===================================================== */
+/* HEADER =========================================================== */
 
-#main {
-  background-color: rgb(var(--paper));
-  border-radius: 5px;
-  box-shadow: 0 0 50px 2px rgba(var(--paper),.25);
-  color: rgb(var(--ink));
-  display: flex;
-  flex-flow: column;
-  height: 100%;
-}
-
-/* HEADER ----------------------------------------------------------- */
-
-#main > #header {
+#header {
   align-items: center;
+  background-color: rgb(var(--paper));
   box-sizing: border-box;
+  color: rgb(var(--ink));
   display: flex;
   flex-flow: row;
   height: 60px;
@@ -531,12 +521,14 @@ ul.tags {
 
 /* CONTENT ---------------------------------------------------------- */
 
-#main > #body {
+#main {
   align-content: center;
+  background-color: rgb(var(--paper));
+  color: rgb(var(--ink));
   flex-grow: 1;
-  margin: 0px 20px;
+  margin: 0;
   overflow-y: scroll;
-  padding: 0px 8px;
+  padding: 0px 20px;
   
   & > div {
     box-sizing: border-box;
@@ -588,7 +580,7 @@ ul.tags {
 
 /* HOME . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . */
 
-#main > #body > #home {
+#main > #home {
   align-items: center;
   display: flex;
   flex-flow: row;
@@ -624,7 +616,7 @@ ul.tags {
 
 /* CV . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . */
 
-#main > #body > #cv {
+#main > #cv {
   display: flex;
   flex-flow: row;
   gap: 60px;
@@ -676,7 +668,7 @@ ul.tags {
 
 /* RESEARCH . . . . . . . . . . . . . . . . . . . . . . . . . . . . . */
 
-#main > #body > #research {
+#main > #research {
   & h2 {
     margin: 20px 0 0;
     &:first-child {margin: 0;}
@@ -695,7 +687,7 @@ ul.tags {
 
 /* FOOTER ----------------------------------------------------------- */
 
-#main > #body > #footer {
+#main > #footer {
   align-items: flex-end;
   font-size: 12pt;
   opacity: .6;
