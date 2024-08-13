@@ -323,19 +323,8 @@ ul.tags {
   }
 }
 
-/* dark mode */
-#theme {
-  & + label:before {content: "\e90c";}
-  & ~ * {
-    --is-dark: 1;
-    --paper: var(--dark-paper);
-    --link: var(--dark-link);
-    --ink: var(--dark-ink);
-  }
-}
-
 /* light mode */
-#theme:checked {
+#theme {
   & + label:before {content: "\e906";}
   & ~ * {
     --is-dark: 0;
@@ -345,21 +334,21 @@ ul.tags {
   }
 }
 
-/* swap modes if user prefers light */
-@media (prefers-color-scheme: light) {
-  /* light mode */
-  #theme {
-    & + label:before {content: "\e906";}
-    & ~ * {
-      --is-dark: 0;
-      --paper: var(--light-paper);
-      --link: var(--light-link);
-      --ink: var(--light-ink);
-    }
+/* dark mode */
+#theme:checked {
+  & + label:before {content: "\e90c";}
+  & ~ * {
+    --is-dark: 1;
+    --paper: var(--dark-paper);
+    --link: var(--dark-link);
+    --ink: var(--dark-ink);
   }
-  
+}
+
+/* swap modes if user prefers light */
+@media (prefers-color-scheme: dark) {
   /* dark mode */
-  #theme:checked {
+  #theme {
     & + label:before {content: "\e90c";}
     & ~ * {
       --is-dark: 1;
@@ -368,6 +357,17 @@ ul.tags {
       --ink: var(--dark-ink);
     }
   }
+
+  /* light mode */
+  #theme:checked {
+    & + label:before {content: "\e906";}
+    & ~ * {
+      --is-dark: 0;
+      --paper: var(--light-paper);
+      --link: var(--light-link);
+      --ink: var(--light-ink);
+    }
+  } 
 }
 
 /* OVERLAY ========================================================== */
